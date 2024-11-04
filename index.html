@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>"Website with imported google font"</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Fitness Product Survey</h1>
+        <p>Hello! We're a group of first-year students from Ngee Ann Polytechnic! We are currently working on an project to design a fitness product that improves on the existing ones out there!</p>
+        <p>As part of our research, we are conducting a survey to better understand the fitness habits, preferences and needs of users of fitness products, in hope of developing insights that would allow us to provide a better fitness product!</p>
+        <p>Don't worry your details collected remain anonymous and will only be used for the ideation of the product and nothing more!</p>
+        <p>Thank you for your time and kind participation!</p>
+        <br>
+        <form action="action_page.php" method="post">
+            <!-- text-input questions-->
+            <div class="box" id="textbox">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John Cena"><br>
+            </div><br>
+            <div class="box" id="textbox">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="john_cena@sigma.com"><br>
+            </div><br>
+            <div class="box" id="textbox">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" placeholder="date"><br>
+            </div><br>
+            <!--- radio button questions -->
+            <div class="box" id="selectionbox">
+                <p>How old are you?</p>
+                <fieldset>
+                    <div class="option">
+                        <input type="radio" id="20_years_below" name="age" value="20 years and below">
+                        <label for="20_years_below">20 years and below</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="21-30_years" name="age" value="21-30 years">
+                        <label for="21-30_years">21-30 years</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="31-40_years" name="age" value="31-40 years">
+                        <label for="31-40_years">31-40 years</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="more_than_40_years" name="age" value="More than 40 years">
+                        <label for="more_than_40_years">More than 40 years</label>
+                    </div>
+                </fieldset>
+            </div><br>
+            <div class="box" id="selectionbox">
+                <p>How many days a week do you exercise?</p>
+                <fieldset>
+                    <div class="option">
+                        <input type="radio" id="never" name="exercise_frequency" value="Never">
+                        <label for="never">Never</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="1-2_times" name="exercise_frequency" value="1-2 times">
+                        <label for="1-2_times">1-2 times</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="3-4_times" name="exercise_frequency" value="3-4 times">
+                        <label for="3-4_times">3-4 times</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="more_than_4_times" name="exercise_frequency" value="More than 4 times">
+                        <label for="more_than_4_times">More than 4 times</label>
+                    </div>
+                </fieldset>
+            </div><br>
+            <!--- checkbox question -->
+            <div class="box" id="selectionbox">
+                <p>Which of these fitness products are you using / have used before?</p>
+                <fieldset>
+                    <div class="option">
+                        <input type="checkbox" id="fitness_trackers" name="fitness_product" value="Fitness trackers">
+                        <label for="fitness_trackers">Fitness trackers</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="fitness_apps" name="fitness_product" value="Fitness apps">
+                        <label for="fitness_apps">Fitness apps</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="fitness_suits" name="fitness_product" value="Fitness suits">
+                        <label for="fitness_suits">Fitness suits</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="fitness_games" name="fitness_product" value="Fitness games">
+                        <label for="fitness_games">Fitness games</label>
+                    </div>
+                </fieldset>
+            </div><br>
+            <!--- text area question -->
+            <div class="box" id="textbox">
+                <p>How was you experience using the fitness products?</p>
+                <textarea id="experience" name="name" placeholder="Type your response"></textarea>
+            </div>
+            <div class="submit">
+                <button type="submit">Submit</button>
+            </div>
+            
+        </form>
+        <script src="https://kit.fontawesome.com/b23e886b39.js" crossorigin="anonymous"></script>
+    </body>
+</html>

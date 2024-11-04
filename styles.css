@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    font-family: Noto Sans;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 24px 24px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 16px;
+}
+
+h1, p {
+    display: flex;
+    max-width: 800px;
+    padding: 4px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    gap: 16px;
+    margin: 0 auto;
+
+    color: rgba(0, 0, 0, 0.8);
+}
+h1 {
+    font-size: xxx-large;
+    padding-bottom: 8px;
+}
+
+.box{
+    display: flex;
+    max-width: 800px;
+    padding: 24px 48px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    gap: 4px;
+    margin: 0 auto;
+    
+
+    background: rgba(244, 244, 244, 0.40);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(4px);
+}
+.box #info {
+    align-items: center;
+    justify-content: space-around;
+}
+.submit {
+    display: flex;
+    max-width: 800px;
+    padding: 24px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+    margin: 0 auto;
+}
+.option {
+    display: flex;
+    width: 100%;
+    padding: 0px 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4;
+}
+
+button {
+    display: flex;
+    max-width: 800px;
+    padding: 16px 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    gap: 4px;
+    
+    font-size: medium;
+    border: 0px;
+    background: rgba(56, 61, 220, 0.6);
+    color: azure;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px 0px rgba(68, 74, 231, 0.8);
+    backdrop-filter: blur(4px);
+}
+button:hover {
+    background: rgba(56, 62, 236, 0.8);
+}
+
+#textbox label, .box p {
+    font-weight: bold;
+    display: flex;  
+    width: 100%;
+    padding: 8px 0px;
+    align-items: flex-start;
+    gap: 4px;
+}
+#selectionbox label {
+    display: flex;  
+    width: 4800%;
+    padding: 8px 12px;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+input {
+    display: flex;  
+    width: 100%;
+    padding: 8px 12px;
+    gap: 4px;
+    font-size: medium;
+
+    align-items: center;
+}
+#textbox input {
+    display: flex;  
+    width: 100%;
+    padding: 8px 8px;
+    align-items: center;
+
+    border-radius: 4px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.04) inset;
+    backdrop-filter: blur(4px);
+}
+textarea {
+    display: flex;  
+    resize: none;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    padding: 8px 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    margin-bottom: 16px;
+
+    font-size: medium;
+    border-radius: 4px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.04) inset;
+    backdrop-filter: blur(4px);
+}
+
+fieldset {
+    display: flex;  
+    width: 100%;
+    flex-direction:column;
+    align-items: flex-start;
+    padding: 0px 0px;
+    gap: 4px;
+
+    border: 0px;
+}

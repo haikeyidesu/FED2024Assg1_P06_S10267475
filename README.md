@@ -1,4 +1,4 @@
-# just_a_new_repo
+# just a new repo
 
 first git repo in a while
-x
+I didn't rename the repo at the start
